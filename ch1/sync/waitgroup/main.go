@@ -12,13 +12,6 @@ func worker(id int, wg *sync.WaitGroup) {
 	time.Sleep(time.Second) // 模拟工作
 	fmt.Printf("Worker %d done\n", id)
 }
-func main() {
-
-	test0()
-	test1()
-	test2()
-
-}
 
 func test0() {
 	var wg sync.WaitGroup
@@ -69,4 +62,10 @@ func test2() {
 
 	wg.Wait()
 	fmt.Println("All stages completed")
+}
+
+func main() {
+	test0()
+	test1()
+	test2()
 }
