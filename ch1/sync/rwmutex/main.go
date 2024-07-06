@@ -6,7 +6,7 @@ import (
 )
 
 type Counter struct {
-	sync.Mutex
+	sync.RWMutex
 	value int
 }
 
