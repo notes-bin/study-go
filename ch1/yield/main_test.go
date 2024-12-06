@@ -3,7 +3,6 @@ package yield
 import (
 	"fmt"
 	"testing"
-	"iter"
 )
 
 func Backward[E any](s []E) func(yield func(int, E) bool) {
